@@ -1,0 +1,3 @@
+<template name="module-title">
+<view class="module-title">{{ title }}</view>
+</template>

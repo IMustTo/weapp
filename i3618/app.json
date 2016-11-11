@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/msg/msg"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#343434",
+    "navigationBarTitleText": "智慧校园",
+    "navigationBarTextStyle":"#fff"
+  }
+}

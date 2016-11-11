@@ -1,0 +1,19 @@
+<!--msg.wxml-->
+<view class="container">
+  <view class="section">
+    <textarea
+      class="border-textarea"
+      placeholder="请输入通知内容"
+      bindblur="msgblur"
+      auto-focus />
+  </view>
+
+  <view class="section">
+    <button type="primary"
+      loading="{{ loading }}"
+      disabled="{{ disabled }}"
+      bindtap="sendMsg">
+      发送
+    </button>
+  </view>
+</view>
