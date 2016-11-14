@@ -3,7 +3,7 @@
 <import src="../../templates/ModuleTitle.wxml"/>
 
 <view class="container">
-  <swiper indicator-dots="false" 
+  <swiper indicator-dots="false"
     autoplay="true"
     interval="5000"
     duration="1000">

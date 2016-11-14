@@ -1,9 +1,8 @@
 <template name="grid-btn">
-<view class="grid-btn">
+<view class="grid-btn" bindtap="tapGridBtn">
   <view
     class="grid-btn-icon"
-    data-page="{{ page }}"
-    bindtap="tapGridBtn">
+    data-page="{{ page }}">
 
     <image src="{{ icon }}" mode="aspectFit"></image>
   </view>
