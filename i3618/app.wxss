@@ -48,9 +48,11 @@ page {
   right: 0;
   bottom: 50px;
   left: 0;
+
+  overflow-y: auto;
 }
 .g-navtab-navs {
-  position: absolute;
+  position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
@@ -66,25 +68,36 @@ page {
 
   width: 20%;
   height: 50px;
+
   background-color: #fff;
 }
 .g-navtab-nav image {
   display: block;
 
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
   margin: 0 auto;
+  margin-top: 5px;
 }
 .g-navtab-nav-name {
-  margin-top:5px;
-  display:block;
-  text-align:center;
-  color:#888;
-  font-size:14px;
-  white-space:nowrap;
-  text-overflow:ellipsis;
-  overflow:hidden;
+  font-size: 12px;
+
+  display: block;
+  overflow: hidden;
+
+  margin-top: 2px;
+
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  color: #888;
 }
+.g-navtab-nav-big-icon {
+  width: 40px;
+  height: 40px;
+}
+
 
 /* .m-*: module（模块） 导航、登陆登 */
 .m-grids {

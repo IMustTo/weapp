@@ -1,0 +1,178 @@
+<view class="section banner-home">
+
+	<view class="campus-location">
+		<image  class="location-logo" src="/images/location.png"/>
+		<button class="location-btn" bindtap="bindLocation">青岛</button>
+	</view>
+	
+	<view class="campus-search">
+		<image class="search-logo" src="/images/search.png" />
+		<input placeholder="搜索服务、福利、活动" focus="{{focus}}" />
+	</view>
+	
+	<swiper class="campus-banner" indicator-dots="{{indicatorDots}}"
+		autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+		<block wx:for="{{imgUrls}}">
+		<swiper-item>
+			<image src="{{item}}" class="campus-banner-image"/>
+		</swiper-item>
+		</block>
+	</swiper>
+	
+</view>
+
+<view class="section welfare-campus ">
+    <view class="welfare-left">
+		<view class="welfare xiaoyuanfuli">
+			<image class="wx-image_KzIQEP" src="/images/welfare-campus.png"/>
+		</view>
+    </view>
+    <view class="welfare-right">
+        <view class="welfare-box">
+            <view class="welfare wentihuodong">
+                <text class="welfare-text">文体活动</text>
+            </view>
+            <view class="welfare guanggaoyinshua">
+                <text class="welfare-text">广告印刷</text>
+            </view>
+        </view>
+        <view class="welfare-box">
+            <view class="welfare mt6 xiaoyuancaigou">
+                <text class="welfare-text">校园采购</text>
+            </view>
+            <view class="welfare mt6 xuexiaopeixun">
+                <text class="welfare-text">教学培训</text>
+            </view>
+        </view>
+    </view>
+</view>
+
+<view class="section welfare-teacher">
+    <view class="welfare-left">
+		<view class="welfare jiaoshifuli">
+			<image class="wx-image_KzIQEP" src="/images/welfare-teacher.png"/>
+		</view>
+    </view>
+    <view class="welfare-right">
+        <view class="welfare-box ">
+            <view class="welfare yinhangfuwu">
+                <text class="welfare-text">银行服务</text>
+            </view>
+            <view class="welfare huafeifuwu">
+                <text class="welfare-text">话费服务</text>
+            </view>
+        </view>
+        <view class="welfare-box">
+            <view class="welfare mt6 shushibangong">
+                <text class="welfare-text">舒适办公</text>
+            </view>
+            <view class="welfare mt6 fulizhaomu">
+                <text class="welfare-text">福利招募</text>
+            </view>
+        </view>
+    </view>
+</view>
+
+<view class="section campus-ads m20">
+  <scroll-view class="scroll-view_H" scroll-x="true" style="width: 750rpx;height:141rpx;">
+    <view class="scroll-view-item_H"  style="margin-left:25rpx;">
+		<image class="wx-image_ad" src="/images/ad-01.png"/>
+	</view>
+    <view class="scroll-view-item_H">
+		<image class="wx-image_ad" src="/images/ad-02.png"/>
+	</view>
+    <view class="scroll-view-item_H">
+		<image class="wx-image_ad" src="/images/ad-03.png"/>
+	</view>
+  </scroll-view>
+</view>
+
+<view class="section services-box" >
+    <view class="services-title-box">
+		<image class="services-title" src="/images/service-title.png"/>
+    </view>
+    <view class="services-list">
+		<view class="services-item">
+			<view class="services-image-box">
+				<image class="services-image" src="/images/services-01.png"/>
+			</view>
+			<view class="servoces-detail">
+				<view class="services-h1">
+					<text class="services-text">学而优印书社</text>
+				</view>
+				<view class="services-desc">
+					<text class="services-text">试卷印刷，广告制作，免费为学校提供名片设计</text>
+				</view>
+				<view class="services-social">
+					<view class="services-view">
+					 <image class="services-view-image" src="/images/services-view.png"/>
+						<text class="services-text">2902</text>
+					</view>
+					<view class="services-like">
+					   <image class="services-like-image" src="/images/services-like.png"/>
+						<text class="services-text">1658</text>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="services-item">
+			<view class="services-image-box">
+				<image class="services-image" src="/images/services-01.png"/>
+			</view>
+			<view class="servoces-detail">
+				<view class="services-h1">
+					<text class="services-text">学而优印书社</text>
+				</view>
+				<view class="services-desc">
+					<text class="services-text">试卷印刷，广告制作，免费为学校提供名片设计</text>
+				</view>
+				<view class="services-social">
+					<view class="services-view">
+					 <image class="services-view-image" src="/images/services-view.png"/>
+						<text class="services-text">2902</text>
+					</view>
+					<view class="services-like">
+					   <image class="services-like-image" src="/images/services-like.png"/>
+						<text class="services-text">1658</text>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="services-item">
+			<view class="services-image-box">
+				<image class="services-image" src="/images/services-01.png"/>
+			</view>
+			<view class="servoces-detail">
+				<view class="services-h1">
+					<text class="services-text">学而优印书社</text>
+				</view>
+				<view class="services-desc">
+					<text class="services-text">试卷印刷，广告制作，免费为学校提供名片设计</text>
+				</view>
+				<view class="services-social">
+					<view class="services-view">
+					 <image class="services-view-image" src="/images/services-view.png"/>
+						<text class="services-text">2902</text>
+					</view>
+					<view class="services-like">
+					   <image class="services-like-image" src="/images/services-like.png"/>
+						<text class="services-text">1658</text>
+					</view>
+				</view>
+			</view>
+		</view>
+    </view>
+	
+	<view class="section wish-box">
+		<view class="blank-height"></view>
+		<view class="wish-image-box">
+			<image class="wish-image" src="/images/wish.png"/>
+		</view>
+		<view class="wish-text-box">
+			<text class="wish-text">想要福利就来许愿，许愿就送积分奖励！</text>
+		</view>
+		<button class="weui-btn wish-button" >去许愿</button>
+		<view class="blank-height"></view>
+	</view>
+
+</view>
