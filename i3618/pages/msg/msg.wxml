@@ -1,19 +1,28 @@
 <!--msg.wxml-->
-<view class="container">
-  <view class="section">
-    <textarea
-      class="border-textarea"
-      placeholder="请输入通知内容"
-      bindblur="msgblur"
-      auto-focus />
+<view class="page">
+  <view class="weui-cells">
+    <navigator url="../org/org" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+      <view class="weui-cell__bd">接收人</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access">14级2班（26人）</view>
+    </navigator>
   </view>
 
-  <view class="section">
+  <view class="weui-cells">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <textarea style="height: 6.6em"
+          class="weui-textarea"
+          placeholder="通知内容"
+          bindblur="msgblur"/>
+
+      </view>
+    </view>
+  </view>
+
+  <view class="weui-btn-area">
     <button type="primary"
       loading="{{ loading }}"
       disabled="{{ disabled }}"
-      bindtap="sendMsg">
-      发送
-    </button>
+      bindtap="sendMsg">发送</button>
   </view>
 </view>

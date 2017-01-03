@@ -1,7 +1,8 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/msg/msg"
+    "pages/msg/msg",
+    "pages/org/org"
   ],
   "window":{
     "backgroundTextStyle":"light",

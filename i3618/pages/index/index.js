@@ -2,35 +2,47 @@
 // 获取应用实例
 Page({
   data: {
-    imgUrls: [
-      '../../assets/images/s1.png',
-      '../../assets/images/s2.png',
-    ],
+    common: {
+      title: '常用应用',
+      apps: [
+        {
+          icon: '../../assets/images/app-tongzhigonggao.png',
+          name: '通知公告',
+          page: '../msg/msg',
+        },
+      ],
+    },
 
-    btns: [{
-      icon: '../../assets/images/tzgg.png',
-      name: '通知公告',
-      page: 'msg',
-    }, {
-      icon: '../../assets/images/zy.png',
-      name: '发作业',
-      page: '1',
-    }, {
-      icon: '../../assets/images/qz.png',
-      name: '家校圈',
-      page: '2',
-    }, {
-      icon: '../../assets/images/xyx.png',
-      name: '秀一秀',
-      page: '3',
-    }],
+    navbar: [
+      {
+        icon: '../../assets/images/icon-home.png',
+        name: '首页',
+        page: '../msg/msg',
+      },
+      {
+        icon: '../../assets/images/icon-xiaoxi.png',
+        name: '消息',
+        page: '../msg/msg',
+      },
+      {
+        icon: '../../assets/images/icon-more.png',
+        name: '',
+        page: '../msg/msg',
+      },
+      {
+        icon: '../../assets/images/icon-tongxunlu.png',
+        name: '通讯录',
+        page: '../msg/msg',
+      },
+      {
+        icon: '../../assets/images/icon-wo.png',
+        name: '我',
+        page: '../msg/msg',
+      },
+    ],
   },
 
-  tapGridBtn(e) {
-    const { page } = e.currentTarget.dataset;
-
-    wx.navigateTo({
-      url: `../${page}/${page}`,
-    });
+  onLoad() {
+    // TODO
   },
 });

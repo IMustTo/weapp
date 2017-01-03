@@ -1,73 +1,260 @@
+@import 'assets/style/weui.wxss';
+
 /**app.wxss**/
-.page {
+page {
+  font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+  font-size: 16px;
+
   background-color: #f8f8f8;
-
-      -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
 }
-.container {
-  height: 100%;
+.page__hd {
+  padding: 40px;
 }
-.section {
-  padding: 15px;
+.page__bd {
+  padding-bottom: 40px;
+}
+.page__bd_spacing {
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
-/* grid-btns */
-.grid-btns {
-  position: relative;
+.page__ft {
+  padding-bottom: 10px;
 
-  overflow: hidden;
-
-  margin: 0;
-  padding: 0;
-
-  border-top: 1rpx solid #ccc;
-  background-color: #fff;
+  text-align: center;
 }
-.grid-btn {
+
+.page__title {
+  font-size: 20px;
+  font-weight: 400;
+
+  text-align: left;
+}
+
+.page__desc {
+  font-size: 14px;
+
+  margin-top: 5px;
+
+  text-align: left;
+
+  color: #888;
+}
+
+/* .g-*: grid（布局） 头部、主体等 */
+.g-navtab-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 50px;
+  left: 0;
+}
+.g-navtab-navs {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  height: 50px;
+
+  border-top: 1rpx solid #d9d9d9;
+}
+.g-navtab-nav {
   position: relative;
 
   float: left;
 
-  box-sizing: border-box;
-  width: 25%;
-  padding: 20px 10px;
+  width: 20%;
+  height: 50px;
+  background-color: #fff;
+}
+.g-navtab-nav image {
+  display: block;
 
-  border-bottom: 1rpx solid #ccc;
-  border-left: 1rpx solid #ccc;
-}
-.grid-btn:active {
-  background-color: #ececec;
-}
-.grid-btn-icon {
   width: 28px;
   height: 28px;
   margin: 0 auto;
 }
-.grid-btn-icon image {
-  width: 100%;
-  height: 100%;
+.g-navtab-nav-name {
+  margin-top:5px;
+  display:block;
+  text-align:center;
+  color:#888;
+  font-size:14px;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  overflow:hidden;
 }
-.grid-btn-icon + .grid-btn-name {
-  margin-top: 5px;
-}
-.grid-btn-name {
-  font-size: 14px;
 
+/* .m-*: module（模块） 导航、登陆登 */
+.m-grids {
+  border: none;
+}
+.m-grids .weui-grid {
+  width: 25%;
+
+  border: none;
+}
+.m-grids .weui-grid {
+  width: 25%;
+  padding: 10px;
+
+  border: none;
+}
+.m-grids .weui-grid__icon {
+  width: 60px;
+  height: 60px;
+}
+.m-grids .weui-grid__label {
+  color: #888;
+}
+
+/* .u-*: unit（原件） 按钮等 */
+.u-banner {
+  width: 100%;
+  height: 187px;
+}
+.u-big-title {
+  font-size: 18px;
+
+  color: #000;
+}
+
+/* .f-*: function（） */
+.f-cb:after,
+.f-cbli li:after {
   display: block;
+  visibility: hidden;
+  clear: both;
   overflow: hidden;
 
+  height: 0;
+
+  content: '.';
+}
+.f-cb,
+.f-cbli li {
+  zoom: 1;
+}
+.f-ib {
+  display: inline-block;
+  display: inline;
+  zoom: 1;
+}
+.f-dn {
+  display: none;
+}
+.f-db {
+  display: block;
+}
+.f-fl {
+  float: left;
+}
+.f-fr {
+  float: right;
+}
+.f-pr {
+  position: relative;
+}
+.f-prz {
+  position: relative;
+
+  zoom: 1;
+}
+.f-oh {
+  overflow: hidden;
+}
+.f-fs1 {
+  font-size: 12px;
+}
+.f-fs2 {
+  font-size: 14px;
+}
+.f-fwn {
+  font-weight: normal;
+}
+.f-fwb {
+  font-weight: bold;
+}
+.f-tal {
+  text-align: left;
+}
+.f-tac {
   text-align: center;
+}
+.f-tar {
+  text-align: right;
+}
+.f-taj {
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+.f-vam,
+.f-vama {
+  vertical-align: middle;
+}
+.f-wsn {
+  white-space: nowrap;
+  word-wrap: normal;
+}
+.f-pre {
+  overflow: hidden;
+
+  text-align: left;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.f-wwb {
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.f-ti {
+  overflow: hidden;
+
+  text-indent: -30000px;
+}
+.f-ti2 {
+  text-indent: 2em;
+}
+.f-lhn {
+  line-height: normal;
+}
+.f-tdu,
+.f-tdu:hover {
+  text-decoration: underline;
+}
+.f-tdn,
+.f-tdn:hover {
+  text-decoration: none;
+}
+.f-toe {
+  overflow: hidden;
+
   white-space: nowrap;
   text-overflow: ellipsis;
+  word-wrap: normal;
+}
+.f-csp {
+  cursor: pointer;
+}
+.f-csd {
+  cursor: default;
+}
+.f-csh {
+  cursor: help;
+}
+.f-csm {
+  cursor: move;
+}
+.f-usn {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 
-  color: #666;
+       -o-user-select: none;
 }
 
-/* module-title */
-.module-title {
-  padding: 5px;
-
-  color: #333;
-  background-color: #fff;
-}
+/* .z-*: （状态） 选中等 */
